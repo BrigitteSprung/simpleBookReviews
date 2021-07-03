@@ -1,0 +1,16 @@
+<div>
+    <h1>{{ review.book_name }}</h1>
+<h2>{{ review.author }}</h2>
+<br>
+<p>You completed the book on {{ review.date_completed }}</p> and
+gave it {{ review.rating }} stars.
+<br>
+<h3>Your Review: </h3>
+{{ review.review }}
+</div>
+
+<br>
+<div class="card-footer">
+            <a class="btn btn-secondary" href="/{{ review.id }}/update">Update this review</a>
+            <a class="btn btn-secondary" href="/{{ review.id }}/delete">Delete this review</a>
+</div>
