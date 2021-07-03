@@ -1,0 +1,17 @@
+{% for review in reviews %}
+ <div class="card mt-3">
+            <div class="card-header">
+                <a href="/{{ review.id }}">
+                    <h2>{{ review.book_name}}</h2>
+                    <h4>{{ review.author}}</h4>
+                    <h4>Rating: {{ review.rating }}</h4>
+                </a>
+            </div>
+            <div class="card-body">
+                <p>Date Completed: {{ review.date_completed }}</p>
+                <p>{{ review.review }}</p>
+
+            </div>
+
+        </div>
+{% endfor %}
